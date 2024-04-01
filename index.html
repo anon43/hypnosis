@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги Гипноза</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #ff00ff, #00ffff);
+            animation: swirl 10s infinite alternate;
+        }
+
+        /* Стили шапки */
+        header {
+          
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Стили меню навигации */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: border-bottom 0.3s ease; /* Добавляем плавный переход для подчеркивания */
+        }
+
+        nav ul li a:hover {
+         
+            border-bottom: 3px solid #fff; /* Добавляем подчеркивание при наведении */
+        }
+
+        /* Стили контента */
+        main {
+            position: relative;
+        }
+
+        .content {
+            padding: 100px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Стили карточек услуг */
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service-card h3 {
+            color: #333;
+        }
+
+        .service-card p {
+            color: #666;
+        }
+
+        .service-card button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .service-card button:hover {
+            background: #777;
+        }
+
+        /* Стили для баннера */
+        .banner {
+            background-image: url('Designer1.png'); /* Замените 'your-banner-image.jpg' на путь к вашему изображению баннера */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .banner h2 {
+            margin-top: 0;
+            font-size: 36px;
+        }
+
+        .banner p {
+            font-size: 18px;
+        }
+         /* Стили для галереи постов */
+         .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .post {
+            background: #fff;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden; /* Скрытие контента поста, который "раскрывается" */
+            transition: height 0.5s ease; /* Плавное изменение высоты элемента */
+        }
+
+        .post h3 {
+            color: #333;
+        }
+
+        .post p {
+            color: #666;
+            white-space: nowrap; /* Запрет переноса строки */
+            overflow: hidden; /* Скрытие текста, выходящего за границы элемента */
+            text-overflow: ellipsis; /* Отображение многоточия для обрезанного текста */
+        }
+
+        .post img {
+            width: 100%;
+            height: auto;
+            cursor: pointer; /* Добавляем указатель при наведении на изображение */
+        }
+
+        .post.expanded p {
+            white-space: normal; /* Отображение всего текста после раскрытия поста */
+            overflow: visible;
+            text-overflow: initial;
+        }
+
+        .post.expanded {
+            height: auto; /* Увеличиваем высоту элемента при активации класса expanded */
+        }
+        
+        @keyframes swirl {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в мир гипноза</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">Блог</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" class="content">
+            <h2>Разблокируйте потенциал вашего разума</h2>
+            <p>Почувствуйте силу гипноза для трансформации вашей жизни.</p>
+        </section>
+         <div class="banner">
+        <h2>Специальное предложение!</h2>
+        <p>Запишитесь сегодня и получите скидку 20% на первую сессию гипноза.</p>
+    </div>
+        <section id="services" class="content">
+            <h1>Услуги</h1>
+            <div class="services-container">
+                <div class="service-card">
+                    <h3>Гипнотерапия</h3>
+                    <p>Исследуйте глубины вашего подсознания, чтобы преодолеть проблемы.</p>
+                    <button>Узнать больше</button>
+                </div>
+                <div class="service-card">
+                    <h3>Регрессия в Прошлые Жизни</h3>
+                    <p>Откройте ваши прошлые жизни и получите понимание вашего настоящего.</p>
+                    <button>Узнать больше</button>
+                </div>
+                <!-- Добавьте еще карточки услуг здесь -->
+            </div>
+        </section>
+        <section id="about" class="content">
+            <h1>Блог</h1>
+            <section class="gallery">
+                <div class="post">
+                    <h3>Гипноз</h3>
+                    <img src="Designer23.png" alt="Пост 1" onclick="expandPost(this)">
+                    <p>Загадочные, мистические и интригующие – гипнотические внушения заставляют нас задуматься о мощи человеческого разума. Они представляют собой удивительное явление, способное влиять на мысли, поведение и чувства людей. Гипноз, как наука и искусство, уже веками вызывает интерес и вопросы. Но что такое гипнотические внушения на самом деле?
+
+                        Гипноз – это состояние глубокой релаксации и фокусировки внимания, которое может быть использовано для изменения мыслей и поведения человека. Внушения во время гипноза могут быть сильными и эффективными, заставляя человека испытывать различные ощущения и реагировать на команды или предложения гипнотизера.</p>
+                </div>
+                <div class="post">
+                    <h3>Гипнотические внушения</h3>
+                    <img src="Designer4.png" alt="Пост 2" onclick="expandPost(this)">
+                    <p>Гипнотические внушения могут быть использованы для различных целей, от улучшения здоровья и борьбы со стрессом до изменения привычек и преодоления фобий. Они могут также быть использованы в развлекательных целях, например, на гипнотических шоу, где люди добровольно позволяют себе быть гипнотизированными для развлечения публики.</p>
+                </div>
+                <!-- Добавьте другие посты здесь -->
+            </section>
+        </section>
+        
+        <section id="contact" class="content">
+            <h1>Контакты</h1>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4MNa0SYSiaZ8XHtfvKXbT_ydBewRhWCjUdvxcdQXu6HjbCw/viewform?embedded=true" 
+                    width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 600px;">
+                
+            </iframe>
+        </section>
+    </main>
+    <script>
+        function expandPost(image) {
+            var post = image.parentNode; // Получаем родительский элемент (пост)
+            post.classList.toggle("expanded"); // Добавляем/удаляем класс expanded, который изменяет высоту поста
+        }
+    </script>
+</body>
+</html>
